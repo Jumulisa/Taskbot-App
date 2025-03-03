@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "models"
+		},
+		{
+			"path": "node_modules"
+		},
+		{
+			"path": "routes"
+		},
+		{
+			"path": "taskbot-frontend"
+		}
+	]
+}
