@@ -1,0 +1,3 @@
+[submodule "taskbot/taskbot-frontend"]
+	path = taskbot/taskbot-frontend
+	url = https://github.com/Jumulisa/Taskbot-App.git
