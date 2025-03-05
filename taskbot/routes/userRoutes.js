@@ -5,9 +5,9 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/User'); // Only one declaration
 
-// Create a new user
-router.post('/add', async (req, res) => {
-    console.log('Received request to add a user:', req.body); // Log the incoming request body
+// Create a new user (registration)
+router.post('/register', async (req, res) => {
+    console.log('Received request to register a user:', req.body); // Log the incoming request body
     const { name, email, role, section } = req.body;
     try {
         const newUser = new User({ name, email, role, section });
@@ -18,6 +18,7 @@ router.post('/add', async (req, res) => {
         res.status(400).json({ message: err.message });
     }
 });
+
 
 // Get all users
 router.get('/', async (req, res) => {
